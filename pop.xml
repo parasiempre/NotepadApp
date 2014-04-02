@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Deprecated" >
+
+    <TextView
+        android:id="@string/_id_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/FileName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="27dp"
+        android:text="@string/file_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/FileName"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Save_Button"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="91dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/Save_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FileName"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="52dp"
+        android:layout_toRightOf="@+id/Cancel_Button"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/Cancel_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Save_Button"
+        android:layout_alignBottom="@+id/Save_Button"
+        android:layout_alignRight="@string/_id_textview1"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Save_Button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="File already exists. Replace?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="invisible" />
+
+</RelativeLayout>
